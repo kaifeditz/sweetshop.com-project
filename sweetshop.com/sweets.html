@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+<head>
+<title>Home page</title>
+	<style>
+	header{
+	width: 100%;
+	height: 50px;
+	float: left;
+	box-sizing: border-box;
+	padding: 6px;
+	}
+	#brand{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	float: left;
+	ma-left: 24px;
+	}
+	#tag_line{
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	font-family: century gothic;
+	margin-right: 24px;
+	}
+	body{
+	padding: 0;
+	margin: 0;
+	}
+	nav{
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+	float: left;
+	box-sizing: border-box;
+	padding: 30px;
+	}
+	#search{
+	width: 400px;
+	height: 30px;
+	float: left;
+	box-sizing: border-box;
+	border: none;
+	font-size: 15px;
+	padding: 10px;
+	}
+	#search-btn{
+	width: 100px;
+	height: 30px;
+	float: left;
+	box-sizing: border-box;
+	border: none;
+	margin-left: 3px;
+	font-size: 15px;
+	}
+	#menu_table{
+	width: 600px;
+	height: 30px;
+	float: right;
+	box-sizing: border-box;
+	}
+	#menu_item{
+	background-color: white;
+	width: 20%;
+	text-align: center;
+	}
+	a{
+	text-decoration: none;
+	color: red;
+	font-family: sans-serif;
+	}
+	section{
+	width: 100%;
+	height: 1650px;
+	float: left;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-color: blue;
+	padding: 30px;
+	}
+	#venue{
+	float: left;
+	}
+	#phone{
+	float: right;
+	}
+	#populer-sweets-box{
+	width: 720px;
+	height: 550px;
+	float: left;
+	box-sizing: border-box;
+	background-color: black;
+	margin-top: 30px;
+	padding: 25px;
+	}
+	#populer-sweets-title{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+	#populer-sweets-img{
+	width: 300px;
+	height: 200px;
+	margin: 15px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: white;
+	box-sizing: border-box;
+	}
+	#rate_list_box{
+	width: 450px;
+	height: 550px;
+	float: right;
+	box-sizing: border-box;
+	margin-top: 30px;
+	}
+	#rate_header{
+	height: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: century gothic;
+	font-size: 25px;
+	}
+	#rate_content{
+	background-color: blue;
+	}
+	#s_name{
+	color: white;
+	font-family: century gothic;
+	font-size: 22px;
+	padding: 7.5px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	}
+	#rate{
+	list-style: none;
+	}
+	fieldset{
+	width: 690px;
+	height: 550px;
+	padding: 10px;
+	float: left;
+	margin-top: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	}
+	legend{
+	font-family: century gothic;
+	font-size: 30px;
+	font-weight: bold;
+	}
+	#order_online{
+	font-size: 17px;
+	font-family: sans-serif;
+	}
+	#order_input{
+	width: 100%;
+	height: 35px;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	margin-top: 5px;
+	}
+	textarea{
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	}
+	#submit_btn{
+	padding: 10px;
+	font-size: 20px;
+	float: right;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #00FF00;
+	background-color: white;
+	border-radius: 15px;
+	}
+	#abt_us{
+	width: 450px;
+	height: 550px;
+	float: right;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	margin-top: 67px;
+	padding: 20px;
+	box-sizing: border-box;
+	}
+	#abt_title{
+	text-align: center;
+	font-family: century gothic;
+	font-size: 30px;
+	}
+	#abt_text{
+	text-align: justify;
+	font-family: sans-serif;
+	line-height: 25px;
+	}
+	#m_sweet{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	}
+	#more_sweets{
+		text-align: center;
+		font-family: century gothic;
+		font-size: 30px;
+	}
+	#sweets{
+	width: 218px;
+	height: 250px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	float: left;
+	margin-right: 46px;
+	margin-bottom: 30px;
+	}
+	#sweets_end{
+	width: 218px;
+	height: 250px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	float: left;
+	}
+	#sweets_pick{
+	width: 180px;
+	height: 150px;
+	margin: 15px;
+	}
+	#buy_btn{
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	width: 100px;
+	background-color: #C0C0C0;
+	border-radius: 12px;
+	}
+	footer{
+	width: 100%;
+	height: 250px;
+	box-sizing: border-box;
+	float: left;
+	background-color: black;
+	}
+	#Contact_us{
+	width: 400px;
+	height: 250px;
+	box-sizing: border-box;
+	float: left;
+	padding: 10px;
+	padding-left: 30px;
+	}
+	#Social_link{
+	width: 400px;
+	height: 250px;
+	box-sizing: border-box;
+	float: right;
+	}
+	#contact_title{
+	color: white;
+	font-family: sans-serif;
+	}
+	#contact_detail{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-style: normal;
+	margin-bottom: 10px;
+	}
+	#social_logo{
+	width: 60px;
+	height: 50px;
+	}
+	#devloper{
+	float: left;
+	color: white;
+	font-family: century gothic;
+	margin-top: 200px;
+	margin-left: 120px;
+	}
+	
+	
+	</style>
+</head>
+<body>
+<header>
+<h1 id="brand">Kaifsweetshop.com</h1>
+<p id="tag_line">The world's largest sweets & backeris shop</p>
+</header>
+<nav>
+<form>
+<input type="search" name="search" placeholder="search your sweets Here" id="search">
+<input type="Submit" id="search-btn" value="Search">
+</form>
+
+<table id="menu_table">
+<tr>
+<td id="menu_item"><a href="index.html">Home</a></td>
+<td id="menu_item"><a href="sweets.html">Sweets</a></td>
+<td id="menu_item"><a href="#">Bakeries</a></td>
+<td id="menu_item"><a href="#abt_us">About us</a></td>
+<td id="menu_item"><a href="#Contact_us">Contact Us</a></td>
+</tr>
+</table>
+</nav>
+
+<section>
+<div id="m_sweet">
+	<h1 id="more_sweets">Your Sweets</h1>
+</div>
+<div id="sweets">
+	<img src="3.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="4.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="7.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="8.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets_end">
+	<img src="9.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+
+<div id="sweets">
+	<img src="3.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="4.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="7.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="8.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets_end">
+	<img src="9.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+
+<div id="sweets">
+	<img src="3.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="4.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="7.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets">
+	<img src="8.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+<div id="sweets_end">
+	<img src="9.png" id="sweets_pick">
+	<center>
+	<a href="index.html#frm_box"><button id="buy_btn">Buy Now</button></a>
+	</center>
+</div>
+</section>
+
+<footer>
+<div id="Contact_us">
+<h1 id="contact_title">Contact Us</h1>
+<address id="contact_detail">Website : Kaifsweetshop.com</address>
+<address id="contact_detail">Phone no. : +91 8810866760 </address>
+<address id="contact_detail">Email Id : kaifeditx@gmail.com</address>
+<address id="contact_detail">Address : Rasulabad Musafirkhana </address>
+</div>
+<div id="devloper">Developed By : Kaif Computer Educational
+	
+</div>
+<div id="Social_link">
+<h1 id="contact_title">Follws Us</h1>
+<a href="https://www.instagram.com/kaif_editz__01?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="10.png" id="social_logo"></a>
+<a href="https://www.youtube.com/@KE_PICTURE_https://www.youtube.com/@KE_PICTURE_"><img src="11.png" id="social_logo"></a>
+<a href="https://facebook.com/profile.php?id=100053728248679&sk=photos_by"><img src="12.png" id="social_logo"></a>
+<a href=""><img src="13.png" id="social_logo"></a>
+</div>
+</footer>
+</body>
+</html>
